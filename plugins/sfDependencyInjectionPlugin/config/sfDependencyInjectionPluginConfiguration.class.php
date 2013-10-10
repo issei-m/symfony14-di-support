@@ -8,6 +8,8 @@
  * file that was distributed with this source code.
  */
 
+require_once sfConfig::get('sf_root_dir') . '/psr/vendor/autoload.php';
+
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Config\FileLocator;
@@ -27,8 +29,6 @@ class sfDependencyInjectionPluginConfiguration extends sfPluginConfiguration
     public function initialize()
     {
         $this->dispatcher->connect('context.load_factories', function(sfEvent $event) {
-            require_once sfConfig::get('sf_root_dir') . '/psr/vendor/autoload.php';
-
             $container = new ContainerBuilder();
             $loader = new YamlFileLoader($container, new FileLocator(sfConfig::get('sf_config_dir')));
             $loader->load('services.yml');
