@@ -1,0 +1,8 @@
+parameters:
+    your_name: 'Issei Murasawa'
+
+services:
+    issei-tester:
+        class: Issei\Tester
+        calls:
+            - [setName, ["%your_name%"]]

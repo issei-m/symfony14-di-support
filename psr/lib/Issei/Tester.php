@@ -4,8 +4,15 @@ namespace Issei;
 
 class Tester
 {
+    private $name = 'Issei';
+
     public function sayHello()
     {
-        echo 'hello!', "\n";
+        echo sprintf("hello %s!\n", $this->name);
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
     }
 }

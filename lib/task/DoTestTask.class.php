@@ -8,11 +8,19 @@ class DoTestTask extends sfBaseTask
     {
         $this->namespace = 'do';
         $this->name      = 'test';
+
+        $this->addOptions(array(
+            new sfCommandOption('application', null, sfCommandOption::PARAMETER_REQUIRED, 'The application name', 'frontend'),
+            new sfCommandOption('env', null, sfCommandOption::PARAMETER_REQUIRED, 'The environment', 'dev'),
+        ));
     }
 
     public function execute($arguments = array(), $options = array())
     {
-        $tester = new Tester();
+        $context = sfContext::createInstance($this->configuration);
+        $container = $context->getContainer();
+        $tester = $container->get('issei-tester');
+
         $tester->sayHello();
     }
 }
