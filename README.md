@@ -18,7 +18,7 @@ First, Clone this repository.
 
 It should be cloned this repository, and you need to configure something to work this project. (e.g.VirturlHost, etc)
 
-Next, Execute above following command to get the necessary some libraries with Composer.
+Next, Execute following command to get the necessary some libraries with Composer.
 
     php composer selfupdate && php composer install
 
