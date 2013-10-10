@@ -16,7 +16,7 @@ First, Clone this repository.
 
     clone git@github.com:issei-m/symfony14-di-support.git
 
-It should be cloned this repository, and your should need to configure something to work this project. (e.g.VirturlHost, etc)
+It should be cloned this repository, and you need to configure something to work this project. (e.g.VirturlHost, etc)
 
 Next, Execute above following command to get the necessary some libraries with Composer.
 
