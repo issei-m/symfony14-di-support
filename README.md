@@ -1,4 +1,4 @@
-Supporting Composer, Symfony/DependencyInjection for the tsymfony 1.4 project.
-==============================================================================
+symfony 1.4 DI support
+======================
 
 In preparation... Coming soon!
