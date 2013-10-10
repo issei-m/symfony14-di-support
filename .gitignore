@@ -1,6 +1,5 @@
 /cache/
 /log/
-/composer.phar
 /composer.lock
 /psr/vendor/
 
