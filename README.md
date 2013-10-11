@@ -7,7 +7,7 @@ Here explains how to use the Symfony/DependencyInjection with Composer in your s
 -----------
 
 The symfony 1.4 is not recommended as creating a new project. If you wanna create a new project, you should use the Symfony2 framework.  
-This repository just explains how to use modern PHP libraries in your project.
+This repository just explains how to use modern PHP libraries in your older symfony project.
 
 Try it
 ------
