@@ -1,5 +1,5 @@
-/cache/
-/log/
+/cache/*
+/log/*
 /composer.lock
 /psr/vendor/
-
+!.gitkeep
