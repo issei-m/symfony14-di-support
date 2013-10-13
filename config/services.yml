@@ -2,7 +2,7 @@ parameters:
     your_name: 'Issei Murasawa'
 
 services:
-    issei-tester:
+    issei_tester:
         class: Issei\Tester
         calls:
             - [setName, ["%your_name%"]]

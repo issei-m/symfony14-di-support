@@ -19,7 +19,7 @@ class DoTestTask extends sfBaseTask
     {
         $context = sfContext::createInstance($this->configuration);
         $container = $context->getContainer();
-        $tester = $container->get('issei-tester');
+        $tester = $container->get('issei_tester');
 
         $tester->sayHello();
     }
