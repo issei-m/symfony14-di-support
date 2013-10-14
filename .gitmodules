@@ -1,0 +1,3 @@
+[submodule "plugins/sfDependencyInjectionPlugin"]
+	path = plugins/sfDependencyInjectionPlugin
+	url = git://github.com/issei-m/sfDependencyInjectionPlugin
