@@ -1,13 +1,11 @@
 {
     "config": {
-        "vendor-dir": "psr/vendor"
+        "vendor-dir": "plugins"
     },
     "autoload": {
-        "psr-0": { "": "psr/lib" }
+        "psr-0": { "": "psr" }
     },
     "require": {
-        "symfony/config": "2.3.*",
-        "symfony/yaml": "2.3.*",
-        "symfony/dependency-injection": "2.3.*"
+        "issei-m/sf-dependency-injection-plugin": "1.*"
     }
 }
