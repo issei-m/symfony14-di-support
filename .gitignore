@@ -2,5 +2,6 @@
 /log/*
 /composer.lock
 /plugins/*
+/lib/vendor/*
 /vagrant/
 !.gitkeep

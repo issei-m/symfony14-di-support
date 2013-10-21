@@ -14,7 +14,7 @@ Get started
 
 First, Clone this repository.
 
-    clone git@github.com:issei-m/symfony14-di-support.git
+    git clone https://github.com/issei-m/symfony14-di-support
 
 Next, Execute following command to get the necessary some libraries with Composer.
 

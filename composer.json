@@ -1,6 +1,6 @@
 {
     "config": {
-        "vendor-dir": "plugins"
+        "vendor-dir": "lib/vendor"
     },
     "autoload": {
         "psr-0": { "": "psr" }
