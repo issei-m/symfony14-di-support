@@ -1,8 +1,9 @@
-parameters:
-    your_name: 'Issei Murasawa'
+all:
+    parameters:
+        your_name: 'Issei Murasawa'
 
-services:
-    issei_tester:
-        class: Issei\Tester
-        calls:
-            - [setName, ["%your_name%"]]
+    services:
+        issei_tester:
+            class: Issei\Tester
+            calls:
+                - [setName, ["%your_name%"]]

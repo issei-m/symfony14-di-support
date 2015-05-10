@@ -17,8 +17,9 @@ class DoTestTask extends sfBaseTask
 
     public function execute($arguments = array(), $options = array())
     {
-        $context = sfContext::createInstance($this->configuration);
-        $container = $context->getContainer();
+        $containerClass = require $this->configuration->getConfigCache()->checkConfig('config/services.yml', true);
+        $container = new $containerClass();
+
         $tester = $container->get('issei_tester');
 
         $tester->sayHello();

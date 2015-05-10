@@ -3,9 +3,9 @@
         "vendor-dir": "lib/vendor"
     },
     "autoload": {
-        "psr-0": { "": "psr" }
+        "psr-4": { "Issei\\": "src/Issei" }
     },
     "require": {
-        "issei-m/sf-dependency-injection-plugin": "1.*"
+        "issei-m/sf-dependency-injection-plugin": "dev-master"
     }
 }

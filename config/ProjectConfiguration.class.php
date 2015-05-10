@@ -12,8 +12,15 @@ class ProjectConfiguration extends sfProjectConfiguration
   public function setup()
   {
     $this->enablePlugins(array(
-        'sfDoctrinePlugin',
-        'sfDependencyInjectionPlugin',
+      'sfDoctrinePlugin',
+      'sfDependencyInjectionPlugin',
     ));
+
+    $this->dispatcher->connect('service_container.build', function (sfEvent $event) {
+      /** @var \Symfony\Component\DependencyInjection\ContainerBuilder $container */
+      $container = $event->getSubject();
+      $container->addObjectResource($this);
+      $container->setParameter('extended', true);
+    });
   }
 }
